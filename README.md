@@ -10,7 +10,7 @@ Tech Stack :-
 HTML5 • CSS3 • BoxIcons • Google Fonts  
 
 Installation:-
- git clone https://github.com/yourusername/profile-card.git  
+ git clone https://github.com/mdraza7544/profile-card.git  
  Open index.html in your browser.  
 
 Responsive Breakpoints :-
