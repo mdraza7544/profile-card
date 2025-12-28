@@ -173,6 +173,346 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+ /* Share Modal Styles */
+        .share-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .share-modal.active {
+            display: flex;
+        }
+
+        .share-content {
+            background: #282828;
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        .share-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .share-header h3 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .close-btn {
+            color: #ffffff;
+        }
+
+        .share-options {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .share-options::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        .share-options::-webkit-scrollbar-track {
+            background: #3a3a3a;
+            border-radius: 10px;
+        }
+
+        .share-options::-webkit-scrollbar-thumb {
+            background: #666;
+            border-radius: 10px;
+        }
+
+        .share-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 70px;
+        }
+
+        .share-option:hover {
+            transform: translateY(-5px);
+        }
+
+        .share-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            transition: all 0.3s;
+        }
+
+        .share-option:hover .share-icon {
+            transform: scale(1.1);
+        }
+
+        .share-option i {
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        .share-option span {
+            font-size: 12px;
+            color: #b3b3b3;
+            font-weight: 400;
+        }
+
+        .share-option.email .share-icon {
+            background: #ea4335;
+        }
+
+        .share-option.whatsapp .share-icon {
+            background: #25d366;
+        }
+
+        .share-option.instagram .share-icon {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .share-option.facebook .share-icon {
+            background: #4267b2;
+        }
+
+        .share-option.twitter .share-icon {
+            background: #1da1f2;
+        }
+
+        .share-option.linkedin .share-icon {
+            background: #0077b5;
+        }
+
+        .share-option.copy .share-icon {
+            background: #667eea;
+        }
+
+        .share-option.messenger .share-icon {
+            background: #0084ff;
+        }
+
+        .share-option.telegram .share-icon {
+            background: #0088cc;
+        }
+
+        .share-link-section {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 12px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .share-link-text {
+            color: #b3b3b3;
+            font-size: 13px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .copy-link-btn {
+            background: #3ea6ff;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .copy-link-btn:hover {
+            background: #2a8dd9;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Comment Modal Styles */
+        .comment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .comment-modal.active {
+            display: flex;
+        }
+
+        .comment-content {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .comment-header h3 {
+            color: #333;
+            font-size: 20px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }
+
+        .comment-input-section {
+            margin-bottom: 20px;
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .comment-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .add-comment-btn {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-comment-btn:hover {
+            background: #5568d3;
+        }
+
+        .comments-list {
+            margin-top: 20px;
+        }
+
+        .comment-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .comment-time {
+            color: #999;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .no-comments {
+            text-align: center;
+            color: #999;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+
+
 /* Tablet screens (481px to 768px) */
 @media screen and (max-width: 768px) {
     .portfile-card {
