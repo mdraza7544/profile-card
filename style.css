@@ -172,7 +172,7 @@ body {
     font-weight: 500;
 }
 
-/* 
+
 /* Tablet screens (481px to 768px) */
 @media screen and (max-width: 768px) {
     .portfile-card {
@@ -311,4 +311,4 @@ body {
     .data .number {
         font-size: 13px;
     }
-} */
+} 
